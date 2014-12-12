@@ -76,8 +76,8 @@ var svg = d3.select("body").append("svg")
 
 var link = svg.append("g").selectAll(".link"),
     node = svg.append("g").selectAll(".node");
-
-d3.json("https://gist.githubusercontent.com/amkalet/15c2b11d94491777850e/raw/08db5f1957e2a94a4dff3f1fed9bb03880014fd4/radoncont.json", function(error, classes) {
+//d3.json("https://gist.githubusercontent.com/mbostock/1044242/raw/7b3997f1556f1ea862d462b3d73d70ed6bc68ea3/readme-flare-imports.json", function(error, classes) {
+d3.json("https://gist.githubusercontent.com/amkalet/15c2b11d94491777850e/raw/636abe98e8122e0a9f545bec642b48ec7b854c9a/radoncont.json", function(error, classes) {
   var nodes = cluster.nodes(packageHierarchy(classes)),
       links = packageImports(nodes);
 
